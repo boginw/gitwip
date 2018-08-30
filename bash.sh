@@ -1,7 +1,7 @@
 # pushes to current branch
 push() {
 	BRANCH=$(git rev-parse --abbrev-ref HEAD)
-	git push origin $BRANCH
+	git push origin $BRANCH $1
 }
 
 # commit and maybe remove WIP commit
